@@ -44,7 +44,10 @@ dependencies {
     implementation("io.insert-koin:koin-logger-slf4j:$koin_version")
 
     // Skrapeit
-    implementation("it.skrape:skrapeit:1.1.5")
-    implementation("it.skrape:skrapeit-core:1.0.0")
-    implementation("it.skrape:skrapeit-ktor:1.0.0")
+//    implementation("it.skrape:skrapeit:1.0.0-alpha7")
+//    implementation("it.skrape:skrapeit-core:1.0.0-alpha8")
+//    implementation("it.skrape:skrapeit-ktor:1.3.0-alpha.1")
+    implementation("it.skrape:skrapeit-core:1.0.0-alpha8")
+    implementation("it.skrape:skrape-it:1.0.0-alpha7")
+    implementation("it.skrape:skrapeit-ktor-extension:1.3.0-alpha.1")
 }
