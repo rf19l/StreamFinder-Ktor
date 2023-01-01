@@ -11,10 +11,11 @@ import org.bson.types.ObjectId
  */
 @Serializable
 data class Media(
-    val title: String? = null,
-    val releaseDate: String? = null,
-    val imdbRating: String? = null,
-    val streamingList: List<StreamingPlatform> = listOf(),
+    var title: String? = null,
+    var releaseYear: Int? = null,
+    var imdbRating: Double? = null,
+    var streamingList: List<StreamingPlatform>? = listOf(),
+    var purchaseList: List<StreamingPlatform>? = listOf(),
     @BsonId
-    val id: String = ObjectId().toString()
+    var id: String = ObjectId().toString(),
 )
