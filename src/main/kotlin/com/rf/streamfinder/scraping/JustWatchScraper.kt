@@ -111,7 +111,6 @@ private fun handleRowEntry(entry: DocElement, type: PlatformType): StreamingPlat
             findAll { this }.map { it.ownText }
         }
     }
-    platform.isHdAvailable = platformText.any { it.contains("hd", true) }
     platform.seasonCount = platformText.map { it.filter { it.isDigit() } }.firstOrNull()?.toIntOrNull()
     return platform
 }

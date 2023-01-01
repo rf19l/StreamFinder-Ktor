@@ -10,13 +10,10 @@ data class StreamingPlatform(
     var platformName: String? = null,
     var seasonCount: Int? = null,
     var image: String? = null,
-    var isHdAvailable: Boolean = false,
     var platformType: PlatformType? = null,
-    @BsonId
-    var id: String = ObjectId().toString(),
+    @BsonId var id: String = ObjectId().toString(),
 )
 
 enum class PlatformType(@JsonValue val typeName: String) {
-    STREAM("Stream"),
-    PURCHASE("Purchase")
+    STREAM("Stream"), PURCHASE("Purchase")
 }
